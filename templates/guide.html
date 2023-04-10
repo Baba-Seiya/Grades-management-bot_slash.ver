@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>成績管理bot GradesManagementBot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="valorantやOW等のチーム対戦ゲームの成績を個人単位で勝率を記録できるdiscord botです。">
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="/">成績管理bot GradesManagementBot</a></h1>
+</header>
+
+<!--メインメニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="/">HOME</a></li>
+<li><a href="guide.html">GUIDE</a></li>
+<li><a href="me.html">ME</a></li>
+<li><a href="invitation.html">INVITATION</a></li>
+</ul>
+</nav>
+
+<main>
+
+    <section>
+        <h2>使い方</h2>
+        <p><strong class="color-theme">nonSlash_verなので”/”のところを！に置き換えて見てください。</strong><br>需要と時間があったらスラッシュコマンド化します。</p>
+    
+        <section>
+            <h3>1.選手登録を行う</h3>
+            <p>記録する選手はまず選手登録が必要になります。<br>
+                <strong class="color-theme">/registと入力すると自動で入力した選手が登録されます</strong>
+            </p>
+            <p>別サーバーにて使用する際は再度<strong class="color-theme">/regist</strong>をしてください。 「○○を追加登録しました！」と表示されたらサーバー別登録完了です。</p>
+        </section>
+    
+        <section>
+            <h3>2.1試合結果の登録 (リアクションタイプ)</h3>
+            <p><strong class="color-theme">/match</strong>と入力するとbotが返答し、🅰️ と 🐢 がリアクションされます。<br>
+                ＊便宜上🅰️をAttacker、🐢をDefenderとします。<br> 選手は🅰️ または
+                🐢のどちらかをリアクションし、チーム分けできた場合🆗を押して、そのまま試合を開始してください。</p>
+            <p>試合が終わったら、<strong
+                    class="color-theme">Attackerが勝利した場合✅をリアクション、Defenderが勝利した場合❌をリアクションしてください。</strong><br>これで試合結果の登録は完了です。
+            </p>
+        </section>
+
+        <section>
+            <h3>2.2試合結果の登録(boom bot連動タイプ)</h3>
+            <p><strong class="color-theme">注意!（入力したテキストチャンネルチャンネルid とboom bot が同じテキストチャンネルにメッセージがある必要があります</strong></p>
+            <p><strong class="color-theme">/match-b</strong>/match-b と入力するとboom botの最新のv.teamの結果を参照してAttackerとDefenderを振り分けてくれます。（!match-b‹messege id›でメッセージIDを指定することも可能)</p>
+            <p>振り分けが正しければOKリアクションをしてください。 後は2.1のリアクションタイプと同じです。</p>
+        </section>
+
+        <section>
+            <h3>3.試合結果の表示</h3>
+            <p><strong class="color-theme">/score</strong>と入力すると勝率順でソートした個人別成績が表示されます。</p>
+        </section>
+
+        <section>
+            <h3>4.メッセージ、リアクション指定で一括メンション機能</h3>
+            <p><strong class="color-theme">/call<メッセージについてる絵文字></strong>で直近のその絵文字がついてるメッセージのリアクションを一斉にメンションします。</p>
+            <p><strong class="color-theme"> /call!<message id><メッセージについてる絵文字></strong>（例）/call968048735617695744🐑 を使用するとそのメッセージについてる指定したリアクションに反応した人を一斉メンション出来ます。</p>
+        </section>
+    
+    </section>
+
+</main>
+
+<footer>
+<ul class="icon">
+<li><a href="https://twitter.com/papegame7200"><img src="../static/images/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="https://www.instagram.com/p/Cgw6YjXpfM-/?igshid=YmMyMTA2M2Y=@"><img src="../static/images/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="https://www.youtube.com/channel/UCRWL25QWizUbepEQgKAtN3A"><img src="../static/images/icon_youtube.png" alt="YouTube"></a></li>
+</ul>
+<small>Copyright&copy; <a href="index.html">Sample Company</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+</div>
+<!--/#container-->
+
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="pagetop"><a href="#">↑</a></p>
+<script src="js/openclose_tp.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>成績管理bot GradesManagementBot</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="valorantやOW等のチーム対戦ゲームの成績を個人単位で勝率を記録できるdiscord botです。">
+<link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<header>
+<h1 id="logo"><a href="/">成績管理bot GradesManagementBot</a></h1>
+</header>
+
+<!--メインメニュー-->
+<nav id="menubar">
+<ul>
+<li><a href="/">HOME</a></li>
+<li><a href="guide.html">GUIDE</a></li>
+<li><a href="me.html">ME</a></li>
+<li><a href="invitation.html">INVITATION</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section>
+
+<h2>Discord 招待リンク</h2>
+
+<p class="c">以下の利用規約に同意後、以下の招待リンクにて招待してください。</p>
+
+<div class="box">
+    <h2>利用規約</h2>
+    <p>この利用規約（以下、「本規約」）は、GradesManagementBot（以下、「Bot」）の利用条件を定めるものです。</p>
+    <h3>第1条（適用とBot招待）</h3>
+    <p>1. 本規約は、Botの利用者全員に対して適応されるものとします。<br>
+        2. Bot招待者は、Webサイト上（https://discordbot-nonslash.azurewebsites.net）の使い方を読み、理解した上で招待を行うものとします。
+    </p>
+    <h3>第2条（利用開始）</h3>
+    <p>1. Botの動作に必要なため、Botに与えられたデフォルトの権限について同意するものとします。<br>
+        2. Botの動作に必要なため、ユーザー情報（DiscordUserID, ランク情報, ランク情報の更新日時）が保存されることにBot利用者は同意するものとします。
+    </p>
+    <h3>第3条（ユーザー情報の管理）</h3>
+    <p>1. 第2条2項で保存された情報は、Botの宣伝目的で使用される可能性があり、Bot利用者はこれに同意するものとします。<br>
+        2. ユーザー情報が第三者によって使用されたことによって生じた損害は、Bot製作者は一切の責任を負わないものとします。
+    </p>
+    <h3>第4条（禁止事項）</h3>
+    <p>　1. Botの運営を妨害するおそれのある行為<br>
+        　2. 不正アクセスをし、またはこれを試みる行為<br>
+        　3. 不正な目的を持ってBotを利用する行為<br>
+        　4. その他、Bot製作者が不適切と判断する行為<br>
+    </p>
+    <h3>第5条（Botの提供の停止等）</h3>
+    <p>1. Bot製作者は、以下のいずれかの事由があると判断した場合、Bot利用者に事前に通知することなくBotの全部または一部の提供を停止または中断することができるものとします。<br>
+        　1. コンピュータシステムの保守点検または更新を行う場合<br>
+        　2. Botの需要がないと判断した場合<br>
+        　3. Botの提供継続が困難と判断した場合<br>
+        2. Bot製作者は、Botの提供の停止または中断により、Bot利用者または第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。
+    </p>
+    <h3>第6条（Bot内容の変更等）</h3>
+    <p>1. Bot製作者は、Bot利用者に通知することなく、Bot内容を変更またはBotの提供を中止することができるものとし、これによってBot利用者に生じた損害について一切の責任を負いません。</p>
+    <h3>第7条（利用規約の変更）</h3>
+    <p>1. Bot製作者は、必要と判断した場合には、Bot利用者に通知することなくいつでも本規約を変更することができるものとします。なお、本規約の変更後、Botの利用者は変更後の規約に同意したものとみなします。</p>
+    <p>制定 2022.12.15
+</div>
+
+<div class="btn-container">
+    <button id="btn2">同意する</button>
+    <p id="btn2-text" class="hidden"><strong class="color-theme"> 以下のリンクから招待してください。</strong><br><a href="https://discord.com/api/oauth2/authorize?client_id=899452828882456586&permissions=535059495024&scope=bot%20applications.commands">https://discord.com/api/oauth2/authorize?client_id=899452828882456586&permissions=535059495024&scope=bot%20applications.commands</a></p>
+</div>
+
+
+</section>
+
+</main>
+
+<footer>
+<ul class="icon">
+<li><a href="https://twitter.com/papegame7200"><img src="../static/images/icon_twitter.png" alt="Twitter"></a></li>
+<li><a href="https://www.instagram.com/p/Cgw6YjXpfM-/?igshid=YmMyMTA2M2Y=@"><img src="../static/images/icon_instagram.png" alt="Instagram"></a></li>
+<li><a href="https://www.youtube.com/channel/UCRWL25QWizUbepEQgKAtN3A"><img src="../static/images/icon_youtube.png" alt="YouTube"></a></li>
+</ul>
+<small>Copyright&copy; <a href="index.html">Grades-management-bot</a> All Rights Reserved.</small>
+<span class="pr"><a href="https://template-party.com/" target="_blank">《Web Design:Template-Party》</a></span>
+</footer>
+
+</div>
+<!--/#container-->
+
+<script>
+    const btn2 = document.getElementById('btn2');
+    const btn2Text = document.getElementById('btn2-text');
+
+    btn2.addEventListener('click', () => {
+        btn2Text.classList.toggle('hidden');
+    });
+</script>
+
+<!--jQueryファイルの読み込み-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!--ページの上部へ戻るボタンとスクリプト-->
+<p class="pagetop"><a href="#">↑</a></p>
+<script src="../static/js/openclose_tp.js"></script>
+
+</body>
+</html>
